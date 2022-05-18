@@ -1,0 +1,153 @@
+html,
+body {
+    height: 100%;
+}
+
+h1 {
+    color: rgb(131, 80, 18);
+    margin: auto;
+    width: fit-content;
+}
+
+body {
+    background: url("./Images/nightwperson.jpeg");
+    background-size: cover;
+}
+
+.divs {
+    margin-top: 22px;
+
+}
+
+.gradient-text-move {
+
+    background: #CA4246;
+    background-color: #CA4246;
+    background-image: linear-gradient(#f3ec78, #af4261);
+
+    /* Set thee background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+    cursor: pointer;
+}
+
+.gradient-text-move:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+
+}
+
+
+.gradient-text {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.container1 {
+    margin: auto;
+    color: rgb(186, 151, 9);
+    font-size: 42px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.071);
+    backdrop-filter: blur(10px);
+    height: 250px;
+    width: 600px;
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+}
+
+.container2 {
+    margin: auto;
+    color: rgb(186, 151, 9);
+    background: rgba(255, 255, 255, 0.071);
+    backdrop-filter: blur(10px);
+    height: 250px;
+    width: 600px;
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+}
+
+.container3 {
+    margin: auto;
+    float: left;
+    font-size: x-large;
+    margin-left: 15px;
+    color: rgb(186, 151, 9);
+    background: rgba(255, 255, 255, 0.071);
+    backdrop-filter: blur(10px);
+    height: 250px;
+    width: 400px;
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+}
+
+.container4 {
+    margin: auto;
+    float: right;
+    margin-right: 15px;
+    color: rgb(186, 151, 9);
+    background: rgba(255, 255, 255, 0.071);
+    backdrop-filter: blur(10px);
+    height: 250px;
+    width: 400px;
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+}
+
+
+
+
+
+
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+    0% {
+        background-size: 57%;
+        background-position: 0 0;
+    }
+
+    20% {
+        background-size: 57%;
+        background-position: 0 1em;
+    }
+
+    100% {
+        background-size: 300%;
+        background-position: -9em 1em;
+    }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+    0% {
+        background-size: 300%;
+        background-position: -9em 1em;
+    }
+
+    20% {
+        background-size: 57%;
+        background-position: 0 1em;
+    }
+
+    100% {
+        background-size: 57%;
+        background-position: 0 0;
+    }
+}
